@@ -16,11 +16,19 @@
   --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --width-conteiner: 1110px;
 }
 
 @font-face {
-  font-family: "OpenSans Regular";
+  font-weight: 400;
+  font-family: OpenSans;
   src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: OpenSans;
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
@@ -29,9 +37,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
   color: #2a2626;
+  font-weight: 400;
   font-size: 16px;
-  font-family: "OpenSans Regular", sans-serif;
+  font-family: OpenSans, sans-serif;
   line-height: 1.6em;
 }
 
@@ -42,15 +55,23 @@ body {
   justify-content: center;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Neucha Regular", sans-serif;
-  line-height: 72px;
+  line-height: 1.2em;
 }
 
 h1 {
+  margin-top: 0;
+
   font-size: 72px;
 }
 
@@ -62,7 +83,81 @@ h3 {
   font-size: 34px;
 }
 
-section {
-  width: 1110px;
+header {
+  position: relative;
+
+  width: 100vw;
+}
+
+.header {
+  position: relative;
+}
+
+.conteiner {
+  width: var(--width-conteiner);
   margin: 100px 0;
+}
+
+header::before {
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.header-img {
+  position: absolute;
+  top: -45px;
+  right: -270px;
+
+  width: 1082px;
+  height: 525px;
+}
+
+.header-title {
+  height: 443px;
+}
+
+.header-columns {
+  column-gap: 30px;
+}
+
+.header-column {
+  flex-basis: calc(var(--width-conteiner) / 2);
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.mt-24px {
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  color: var(--white);
+
+  font-weight: bold;
+
+  background-color: var(--main-color);
+
+  cursor: pointer;
+}
+
+.color-orange {
+  color: var(--main-color);
 }
