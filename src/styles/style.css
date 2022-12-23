@@ -58,20 +58,24 @@ body {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
+  justify-content: space-between;
+
+  column-gap: 30px;
+  row-gap: 20px;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  margin: 0;
+
   font-family: "Neucha Regular", sans-serif;
   line-height: 1.2em;
 }
 
 h1 {
-  margin-top: 0;
-
   font-size: 72px;
 }
 
@@ -126,10 +130,6 @@ header::before {
   height: 443px;
 }
 
-.header-columns {
-  column-gap: 30px;
-}
-
 .header-column {
   flex-basis: calc(var(--width-conteiner) / 2);
   flex-grow: 1;
@@ -158,8 +158,46 @@ header a {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.nav {
+  background-color: var(--main-dark-color);
+}
+
+.nav .conteiner {
+  margin-top: 200px;
+}
+
+.nav-item {
+  width: calc(var(--width-conteiner) / 3 - 20px);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.font-size-52 {
+  font-size: 52px;
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
 .mt-24px {
   margin-top: 24px;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 .button {
@@ -176,6 +214,25 @@ header a {
   cursor: pointer;
 }
 
+.color-white {
+  color: var(--white);
+}
+
+.color-main-dark {
+  color: var(--main-dark-color);
+}
+
 .color-orange {
   color: var(--main-color);
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nav-link:hover,
+.nav-link:hover h3 {
+  color: var(--white);
+
+  background-color: var(--main-color);
 }
