@@ -102,7 +102,8 @@ header {
 }
 
 .ikea-effect::before,
-header::before {
+header::before,
+.premature-optimization::before {
   position: absolute;
 
   display: block;
@@ -189,8 +190,6 @@ nav a {
 .effect-description-subtitle {
   margin: 0;
 
-  color: var(--translucent-dark);
-
   font-size: 24px;
 }
 
@@ -258,6 +257,18 @@ nav a {
   cursor: pointer;
 }
 
+.color-dark {
+  color: var(--dark);
+}
+
+.color-translucent-dark {
+  color: var(--translucent-dark);
+}
+
+.color-translucent-white {
+  color: var(--translucent-white);
+}
+
 .color-white {
   color: var(--white);
 }
@@ -268,6 +279,10 @@ nav a {
 
 .color-orange {
   color: var(--main-color);
+}
+
+.color-brown {
+  color: var(--brown);
 }
 
 .wrap {
@@ -283,4 +298,8 @@ nav a {
 
 .bg-brown {
   background-color: var(--brown);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
