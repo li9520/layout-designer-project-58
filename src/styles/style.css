@@ -101,9 +101,9 @@ header {
   margin: 100px 0;
 }
 
-.ikea-effect::before,
-header::before,
-.premature-optimization::before {
+.theme-light::before,
+.theme-dark::before,
+header::before {
   position: absolute;
 
   display: block;
@@ -221,6 +221,16 @@ nav a {
   flex-basis: calc(var(--width-conteiner) / 2);
   flex-grow: 1;
   box-sizing: border-box;
+}
+
+.theme-light {
+  color: var(--dark);
+}
+
+.theme-dark {
+  color: var(--white);
+
+  background-color: var(--brown);
 }
 
 .font-size-52 {
