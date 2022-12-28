@@ -32,7 +32,7 @@
 }
 
 @font-face {
-  font-family: "Neucha Regular";
+  font-family: Neucha;
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
@@ -71,7 +71,8 @@ h3,
 h4 {
   margin: 0;
 
-  font-family: "Neucha Regular", cursive;
+  font-weight: normal;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
@@ -134,14 +135,14 @@ header::before {
   position: absolute;
 
   top: -45px;
-  right: -290px;
+  right: -270px;
   z-index: -1;
 
   height: 525px;
 }
 
 .header-title {
-  margin-bottom: 195.6px;
+  margin-bottom: 201px;
 }
 
 .header-column {
@@ -197,7 +198,7 @@ nav a {
 
 .effect-description {
   font-size: 34px;
-  font-family: "Neucha Regular", sans-serif;
+  font-family: Neucha, sans-serif;
   line-height: 1.2;
 }
 
@@ -440,13 +441,10 @@ form {
   background-color: var(--main-dark-color);
 }
 
-
-
-
 .no-column-gap {
   column-gap: 0;
 }
 
-color-blue {
+.color-blue {
   color: var(--blue);
 }
