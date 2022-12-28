@@ -90,15 +90,24 @@ header {
   position: relative;
 
   width: 100vw;
+  padding: 100px 0;
+}
+
+section {
+  padding: 100px 0;
 }
 
 .header {
   position: relative;
 }
 
+.footer {
+  padding: 100px 0;
+}
+
 .conteiner {
   width: var(--width-conteiner);
-  margin: 100px 0;
+  margin: 0 auto;
 }
 
 .theme-light::before,
@@ -161,11 +170,7 @@ header a {
 }
 
 .nav {
-  background-color: var(--main-dark-color);
-}
-
-.nav .conteiner {
-  margin-top: 200px;
+  padding: 200px 0 100px;
 }
 
 .nav-item {
