@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header  class="bg-light">
+    <header  class="theme-light">
         <div class="conteiner">
-            <h1 class="header-title color-dark">
+            <h1 class="header-title">
                 <span class="color-orange">Когнитивные<br> искажения<br></span>в программировании
             </h1>
             <img class="header-img" src="assets/img/tota_ill-4.png" alt="Тота за ноутбуком">
             <div class="flex-row">
                 <div class="header-column">
-                    <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей 
+                    <p class = "mt-0 mb-0">Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей 
                         продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые
                         существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
                 </div>
                 <div class="header-column">
-                    <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
-                    <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
+                    <p class = "mt-0">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
+                    <p class = "mb-0">Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
                     <a href="#navigation" class="mt-24px button">ПОДРОБНЕЕ</a>
                 </div>
             </div>
@@ -32,11 +32,11 @@
     <main>
         <section class="section-video">
             <div class="conteiner">
-                <h2 class="section-video-title">Что же такое,<br>
+                <h2 class="mb-30px">Что же такое,<br>
                     <span class="color-orange">когнетивные искажения?</span>
                 </h2>
-                <p class="section-video-text">Что такое когнитивные искажения. Petrovna Channel</p>
-                <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss"  allowfullscreen></iframe>
+                <p class="mb-30px">Что такое когнитивные искажения. Petrovna Channel</p>
+                <iframe class="video shadow-filter " width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss"  allowfullscreen></iframe>
             </div>
         </section>
         <nav class="nav bg-main-dark" id="navigation">
@@ -74,50 +74,66 @@
                 </a>
             </div>
         </nav>
-        <section class="flex-column theme-light" id="ikea-effect" > 
+        <section class="theme-light" id="ikea-effect" > 
             <div class= "conteiner">
                 <div class="flex-row">
-                    <div class="effect-img">
-                        <img src="assets/img/img-ikea-effect.png" alt="ikea-effect">
+                    <div>
+                        <img src="assets/img/img-ikea-effect.png" alt="ikea-effect" class="shadow-filter vertical-align-middle ">
                     </div>
                     <div class="effect-description">
                         <p class="effect-description-subtitle color-translucent-dark">Когнитивные искажения</p>
-                        <h2>Эффект Икеа</h2>
+                        <h2>Эффект ИКЕА</h2>
                         <p class="effect-description-content">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
                     </div>
                 </div>
                 <h3 class="how-work-title color-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h3>
-                <div class="flex-row how-work">
-                    <p class="how-work-text">Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают покупать товары, которые они могут собрать сами, а не уже собранные кем-то.</p>
-                    <p class="how-work-text">Мы склонны переоцнивать наши собственные решения и недооценивать решения других. Если вы когда-то работали в компании, которая использовала тупой внутренний инструмент вместо более удобного готового решения, вы понимаете, о чём я говорю.</p>
+                <div class="flex-row">
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают
+                             покупать товары, которые они могут собрать сами, а не уже собранные кем-то.
+                        </p>
+                    </div>
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Мы склонны переоцнивать наши собственные решения и недооценивать решения других.
+                             Если вы когда-то работали в компании, которая использовала тупой внутренний инструмент
+                              вместо более удобного готового решения, вы понимаете, о чём я говорю.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class=" flex-column theme-dark" id="premature-optimization">
+        <section class="theme-dark" id="premature-optimization" > 
             <div class= "conteiner">
                 <div class="flex-row">
+                    <div>
+                        <img src="assets/img/img-premature-optimization.png" alt="premature-optimization" class="shadow-filter vertical-align-middle ">
+                    </div>
                     <div class="effect-description">
                         <p class="effect-description-subtitle color-translucent-white">Когнитивные искажения</p>
                         <h2>Преждевременная оптимизация</h2>
                         <p class="effect-description-content">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
                     </div>
-                    <div class="effect-img">
-                        <img src="assets/img/img-premature-optimization.png" alt="premature-optimization">
-                    </div>
-                    
                 </div>
-                <h3 class="how-work-title color-white color-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h3>
-                <div class="flex-row how-work">
-                    <p class="how-work-text">Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо ремонта мотора, то автомобиль не станет быстрее.</p>
-                    <p class="how-work-text">Отличный пример: писать максимально подтюненный и высокопроизводительный код для всего лишь экспериментального проекта.</p>
+                <h3 class="how-work-title  color-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h3>
+                <div class="flex-row">
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо 
+                            ремонта мотора, то автомобиль не станет быстрее.
+                        </p>
+                    </div>
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Отличный пример: писать максимально подтюненный и высокопроизводительный код 
+                            для всего лишь экспериментального проекта.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class=" flex-column theme-light" id="distortion-of-novelty">
+        <section class="theme-light" id="distortion-of-novelty" > 
             <div class= "conteiner">
                 <div class="flex-row">
-                    <div class="effect-img">
-                        <img src="assets/img/img-distortion-of-novelty.png" alt="distortion-of-novelty">
+                    <div>
+                        <img src="assets/img/img-distortion-of-novelty.png" alt="distortion-of-novelty" class="shadow-filter vertical-align-middle ">
                     </div>
                     <div class="effect-description">
                         <p class="effect-description-subtitle color-translucent-dark">Когнитивные искажения</p>
@@ -126,37 +142,56 @@
                     </div>
                 </div>
                 <h3 class="how-work-title color-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h3>
-                <div class="flex-row how-work">
-                    <p class="how-work-text">Часто это искажение настигает нас, когда нужно решение проблемы и… о! Мы как раз только что решили подобную проблему! Давайте использовать это же решение, потому что оно сработало, и мы помним как!</p>
-                    <p class="how-work-text">Вы замечаете, что пользуетесь теми же рабочими методиками раз за разом? Если да, возможно, вы смотрите на разные проблемы под одним и тем же углом.</p>
+                <div class="flex-row">
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Часто это искажение настигает нас, когда нужно решение проблемы
+                            и… о! Мы как раз только что решили подобную проблему! Давайте использовать это же решение, потому 
+                            что оно сработало, и мы помним как!
+                        </p>
+                    </div>
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Вы замечаете, что пользуетесь теми же рабочими методиками раз за разом? Если да,
+                            возможно, вы смотрите на разные проблемы под одним и тем же углом.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="flex-column theme-dark" id="hyperbolic-depreciation">
+        <section class="theme-dark" id="hyperbolic-depreciation" > 
             <div class= "conteiner">
                 <div class="flex-row">
+                    <div>
+                        <img src="assets/img/img-hyperbolic-depreciation.png" alt="hyperbolic-depreciation" class="shadow-filter vertical-align-middle ">
+                    </div>
                     <div class="effect-description">
                         <p class="effect-description-subtitle color-translucent-white">Когнитивные искажения</p>
                         <h2>Гиперболическое обесценивание</h2>
-                        <p class="effect-description-content">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
+                        <p class="effect-description-content">Вы гонитесь за немедленной маленькой выгодой и
+                            игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
                     </div>
-                    <div class="effect-img">
-                        <img src="assets/img/img-hyperbolic-depreciation.png" alt="hyperbolic-depreciation">
-                    </div>
-                    
                 </div>
-                <h3 class="how-work-title color-white color-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h3>
-                <div class="flex-row how-work">
-                    <p class="how-work-text">Вы когда-нибудь откладывали написание теста? Ловили себя на использовании клавиш-стрелок в Vim? Поздравляю, у вас наблюдается гиперболическое обесценивание.</p>
-                    <p class="how-work-text">Немедленная выгода от использования чего-то быстродоступного значительно смягчает боль, которую нужно перетерпеть, чтобы усвоить правильный синтаксис для перемещения на нужную строчку. Но как только вы поймёте как перемещаться быстрее, выгода в будущем намного выше. В итоге вы сохраните много времени.</p>
+                <h3 class="how-work-title  color-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h3>
+                <div class="flex-row">
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Вы когда-нибудь откладывали написание теста? Ловили себя на использовании
+                            клавиш-стрелок в Vim? Поздравляю, у вас наблюдается гиперболическое обесценивание.
+                        </p>
+                    </div>
+                    <div class="how-work-text">
+                        <p class = "mt-0 mb-0">Немедленная выгода от использования чего-то быстродоступного значительно
+                            смягчает боль, которую нужно перетерпеть, чтобы усвоить правильный синтаксис для перемещения
+                             на нужную строчку. Но как только вы поймёте как перемещаться быстрее, выгода в будущем намного
+                              выше. В итоге вы сохраните много времени.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class=" flex-column theme-light" id="errors-in-planning">
+        <section class="theme-light" id="errors-in-planning" > 
             <div class= "conteiner">
                 <div class="flex-row">
-                    <div class="effect-img">
-                        <img src="assets/img/img-planning-error.png" alt="planning-error">
+                    <div>
+                        <img src="assets/img/img-planning-error.png" alt="errors-in-planning" class="shadow-filter vertical-align-middle ">
                     </div>
                     <div class="effect-description">
                         <p class="effect-description-subtitle color-translucent-dark">Когнитивные искажения</p>
@@ -165,14 +200,18 @@
                     </div>
                 </div>
                 <h3 class="how-work-title color-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h3>
-                <div class="flex-row how-work">
+                <div class="flex-row">
                     <div class="how-work-text">
-                        <p>Одно из искажений, которое должно признать большинство из нас. 
+                        <p class = "mt-0 mb-0">Одно из искажений, которое должно признать большинство из нас. 
                             И менеджеры проекта, и сами пользователи продукта — все склонны ставить сроки, 
-                            в которые невозможно закончить запланированное.</p>
+                            в которые невозможно закончить запланированное.
+                        </p>
                     </div>
-                    <div class="how-work-text"><p>Это отлично выражается в старом афоризме:</p>
-                        <p>Первые 90% готового кода отнимают первые 90% времени разработки. Оставшиеся 10% отнимают вторые 90% времени разработки.</p>
+                    <div class="how-work-text">
+                        <p class="mt-0" >Это отлично выражается в старом афоризме:</p>
+                        <p class="mb-0" >Первые 90% готового кода отнимают первые 90% времени разработки.
+                            Оставшиеся 10% отнимают вторые 90% времени разработки.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -182,7 +221,7 @@
         <div class="conteiner">
             <div class="bg-main-dark">
                 <div class="more-info flex-row color-white ">
-                    <div class = "more-info-column"><h3 class="more-info-title">Хотите узнать больше? <br>Подпишитесь на обновления</h3></div>
+                    <div class = "more-info-column"><h3 class="more-info-title color-white">Хотите узнать больше? <br>Подпишитесь на обновления</h3></div>
                     <div class = "more-info-column">
                         <p class="form-title">Электронная почта</p>
                         <div class="flex-row no-column-gap">
@@ -195,7 +234,7 @@
                                 </div>
                             </a>
                         </div>
-                        <p class="more-info-rules">Подписываясь, вы принимаете <a class="more-info-link-rules" href="#">правила сервиса</a></p>
+                        <p>Подписываясь, вы принимаете <a class="color-white" href="#">правила сервиса</a></p>
                     </div>
                 </div>
             </div>
